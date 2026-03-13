@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with StyleRent. Book a styling consultation, ask about rentals, or visit our flagship store.">
+    <title>Contact Us — StyleRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <h1>Style<span>Rent</span></h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="product.html">Collections</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+                <a href="booking.html" class="nav-cta">Rent Now</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>Book a styling consultation or reach out with any questions about our rental services.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">&#8250;</span>
+                <span>Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="reveal" style="margin-bottom: var(--space-sm);">Book a Styling Consultation</h3>
+                    <p class="reveal"
+                        style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: var(--space-2xl);">Our
+                        fashion experts will help you find the perfect outfit for your occasion. Fill in the form below
+                        and we'll get back to you within 24 hours.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-row reveal">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Your full name"
+                                    required>
+                                <p class="form-error">Please enter your name</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com"
+                                    required>
+                                <p class="form-error">Please enter a valid email address</p>
+                            </div>
+                        </div>
+
+                        <div class="form-row reveal">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <input type="tel" class="form-control" id="contactPhone"
+                                    placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactOccasion">Occasion</label>
+                                <select class="form-control" id="contactOccasion">
+                                    <option value="">Select occasion...</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="reception">Reception</option>
+                                    <option value="cocktail">Cocktail Party</option>
+                                    <option value="gala">Gala / Awards Night</option>
+                                    <option value="engagement">Engagement</option>
+                                    <option value="festival">Festival / Festive Event</option>
+                                    <option value="photoshoot">Photoshoot</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group reveal">
+                            <label for="contactDate">Event Date</label>
+                            <input type="date" class="form-control" id="contactDate">
+                        </div>
+
+                        <div class="form-group reveal">
+                            <label for="contactBudget">Budget Range</label>
+                            <select class="form-control" id="contactBudget">
+                                <option value="">Select your budget...</option>
+                                <option value="2000-5000">₹2,000 — ₹5,000</option>
+                                <option value="5000-10000">₹5,000 — ₹10,000</option>
+                                <option value="10000-20000">₹10,000 — ₹20,000</option>
+                                <option value="20000+">₹20,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group reveal">
+                            <label for="contactMessage">Tell us about your vision *</label>
+                            <textarea class="form-control" id="contactMessage"
+                                placeholder="Describe the look you're going for — style preferences, colour preferences, anything that helps us curate the perfect outfit for you..."
+                                required></textarea>
+                            <p class="form-error">Please share some details about what you're looking for</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg reveal" style="width: 100%;">Send
+                            Consultation Request</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div>
+                    <div class="reveal"
+                        style="background: var(--color-cream); border-radius: var(--radius-md); padding: var(--space-2xl);">
+                        <h3 style="margin-bottom: var(--space-xl);">Store & Support</h3>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">&#9993;</div>
+                            <div>
+                                <h5>Email Us</h5>
+                                <p>hello@stylerent.in</p>
+                                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 2px;">We
+                                    respond within 4 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">&#9742;</div>
+                            <div>
+                                <h5>Call Us</h5>
+                                <p>+91 98765 43210</p>
+                                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 2px;">Mon —
+                                    Sat, 10 AM — 7 PM IST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">&#9962;</div>
+                            <div>
+                                <h5>Flagship Store</h5>
+                                <p>42, Fashion Street, Bandra West</p>
+                                <p>Mumbai, Maharashtra 400050</p>
+                                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 2px;">Walk-ins
+                                    welcome, appointments preferred</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">&#8986;</div>
+                            <div>
+                                <h5>Business Hours</h5>
+                                <p>Monday — Saturday: 10:00 AM — 7:00 PM</p>
+                                <p>Sunday: By appointment only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Preview -->
+                    <div class="reveal"
+                        style="margin-top: var(--space-xl); background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-2xl);">
+                        <h4 style="margin-bottom: var(--space-lg);">Frequently Asked</h4>
+
+                        <div style="margin-bottom: var(--space-lg);">
+                            <h5
+                                style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; margin-bottom: 4px;">
+                                How does the rental process work?</h5>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">Browse our collection, select
+                                your outfit and dates, and we'll deliver it to your doorstep. Return via scheduled
+                                pickup after your event.</p>
+                        </div>
+
+                        <div style="margin-bottom: var(--space-lg);">
+                            <h5
+                                style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; margin-bottom: 4px;">
+                                What if the outfit doesn't fit?</h5>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">We offer free exchanges up to
+                                48 hours before your event date. Our styling team can also arrange minor alterations.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h5
+                                style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; margin-bottom: 4px;">
+                                Is my security deposit refundable?</h5>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">Yes, your deposit is fully
+                                refunded within 3-5 business days after we receive the outfit in good condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--color-primary); text-align: center; padding: var(--space-3xl) 0;">
+        <div class="container">
+            <h2 style="color: var(--color-white); margin-bottom: var(--space-md);" class="reveal">Not Sure What to Wear?
+            </h2>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: var(--space-xl);" class="reveal">Browse our curated
+                lookbook for inspiration or let our stylists choose for you.</p>
+            <div class="reveal">
+                <a href="lookbook.html" class="btn btn-gold">Browse Lookbook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Style<span>Rent</span></h3>
+                    <p>India's premier designer outfit rental platform. Making high fashion accessible for every
+                        occasion.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="lookbook.html">Lookbook</a>
+                    <a href="product.html">Collections</a>
+                    <a href="booking.html">Book Now</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <a href="lookbook.html">Evening Wear</a>
+                    <a href="lookbook.html">Bridal</a>
+                    <a href="lookbook.html">Cocktail</a>
+                    <a href="lookbook.html">Traditional</a>
+                    <a href="lookbook.html">Party Wear</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="contact.html">Styling Consultation</a>
+                    <a href="contact.html">Size Guide</a>
+                    <a href="contact.html">Rental Policy</a>
+                    <a href="contact.html">FAQs</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StyleRent. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">&#9679;</a>
+                    <a href="#" aria-label="Facebook">&#9679;</a>
+                    <a href="#" aria-label="Pinterest">&#9679;</a>
+                    <a href="#" aria-label="Twitter">&#9679;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

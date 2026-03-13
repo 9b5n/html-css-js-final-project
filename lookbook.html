@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="StyleRent Lookbook — Browse our curated gallery of designer outfits. Filter by category and discover your next look.">
+    <title>Lookbook — StyleRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <h1>Style<span>Rent</span></h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="product.html">Collections</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+                <a href="booking.html" class="nav-cta">Rent Now</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label">Our Collection</span>
+            <h1>The Lookbook</h1>
+            <p>Curated designer pieces for every occasion — hover to preview, click to explore.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">&#8250;</span>
+                <span>Lookbook</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section>
+        <div class="container">
+            <!-- Filter Tabs -->
+            <div class="filter-tabs reveal">
+                <button class="filter-tab active" data-category="all">All</button>
+                <button class="filter-tab" data-category="evening">Evening Wear</button>
+                <button class="filter-tab" data-category="bridal">Bridal</button>
+                <button class="filter-tab" data-category="cocktail">Cocktail</button>
+                <button class="filter-tab" data-category="traditional">Traditional</button>
+                <button class="filter-tab" data-category="party">Party Wear</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="card gallery-item reveal" data-category="evening">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-1.png" alt="Emerald Green Evening Gown">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Evening Wear</span>
+                        <h4 class="card-title">Emerald Silk Evening Gown</h4>
+                        <p class="card-price">₹4,800 / 4 days <span class="original">₹68,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="card gallery-item reveal" data-category="cocktail">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-2.png" alt="Red Cocktail Dress">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Cocktail</span>
+                        <h4 class="card-title">Scarlet Off-Shoulder Midi</h4>
+                        <p class="card-price">₹3,200 / 4 days <span class="original">₹48,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="card gallery-item reveal" data-category="evening">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-3.png" alt="Classic Black Evening Dress">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Evening Wear</span>
+                        <h4 class="card-title">Noir Long-Sleeve Column Dress</h4>
+                        <p class="card-price">₹3,800 / 4 days <span class="original">₹55,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="card gallery-item reveal" data-category="traditional">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-4.png" alt="Blush Pink Sari">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Traditional</span>
+                        <h4 class="card-title">Blush Pink Zardozi Sari</h4>
+                        <p class="card-price">₹5,200 / 4 days <span class="original">₹85,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="card gallery-item reveal" data-category="bridal">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-5.png" alt="Ivory Gold Lehenga">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Bridal</span>
+                        <h4 class="card-title">Ivory Gold Threadwork Lehenga</h4>
+                        <p class="card-price">₹8,500 / 4 days <span class="original">₹1,45,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="card gallery-item reveal" data-category="party">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-6.png" alt="Navy Sequin Dress">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Party Wear</span>
+                        <h4 class="card-title">Navy Sequin Cocktail Dress</h4>
+                        <p class="card-price">₹2,800 / 4 days <span class="original">₹42,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="card gallery-item reveal" data-category="cocktail">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-7.png" alt="Burgundy Velvet Gown">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Cocktail</span>
+                        <h4 class="card-title">Burgundy Velvet Drape Gown</h4>
+                        <p class="card-price">₹3,600 / 4 days <span class="original">₹52,000</span></p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="card gallery-item reveal" data-category="bridal">
+                    <div class="card-img-wrap">
+                        <img src="images/fashion-8.png" alt="Rose Gold Lehenga">
+                        <div class="card-img-overlay">
+                            <a href="product.html" class="btn btn-sm btn-gold">View Details</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Wedding Guest</span>
+                        <h4 class="card-title">Rose Gold Embroidered Lehenga</h4>
+                        <p class="card-price">₹6,400 / 4 days <span class="original">₹1,10,000</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section style="background: var(--color-primary); text-align: center; padding: var(--space-3xl) 0;">
+        <div class="container">
+            <h2 style="color: var(--color-white); margin-bottom: var(--space-md);" class="reveal">Found Something You
+                Love?</h2>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: var(--space-xl);" class="reveal">Book your favourite
+                piece now and receive it at your doorstep before your big day.</p>
+            <a href="booking.html" class="btn btn-gold reveal">Book a Rental</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Style<span>Rent</span></h3>
+                    <p>India's premier designer outfit rental platform. Making high fashion accessible for every
+                        occasion.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="lookbook.html">Lookbook</a>
+                    <a href="product.html">Collections</a>
+                    <a href="booking.html">Book Now</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <a href="lookbook.html">Evening Wear</a>
+                    <a href="lookbook.html">Bridal</a>
+                    <a href="lookbook.html">Cocktail</a>
+                    <a href="lookbook.html">Traditional</a>
+                    <a href="lookbook.html">Party Wear</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="contact.html">Styling Consultation</a>
+                    <a href="contact.html">Size Guide</a>
+                    <a href="contact.html">Rental Policy</a>
+                    <a href="contact.html">FAQs</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StyleRent. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">&#9679;</a>
+                    <a href="#" aria-label="Facebook">&#9679;</a>
+                    <a href="#" aria-label="Pinterest">&#9679;</a>
+                    <a href="#" aria-label="Twitter">&#9679;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

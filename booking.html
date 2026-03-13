@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book your designer outfit rental at StyleRent. Select dates, choose duration, and get an instant cost estimate.">
+    <title>Book a Rental — StyleRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <h1>Style<span>Rent</span></h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="product.html">Collections</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+                <a href="booking.html" class="nav-cta">Rent Now</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-label">Reservations</span>
+            <h1>Book Your Rental</h1>
+            <p>Select your dates, choose a duration, and see your total cost instantly.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">&#8250;</span>
+                <span>Booking</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section>
+        <div class="container">
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div>
+                    <form id="bookingForm" novalidate>
+                        <!-- Personal Details -->
+                        <div class="reveal">
+                            <h3 style="margin-bottom: var(--space-lg);">Personal Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Enter your first name" required>
+                                    <p class="form-error">Please enter your first name</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName"
+                                        placeholder="Enter your last name" required>
+                                    <p class="form-error">Please enter your last name</p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" placeholder="your@email.com"
+                                        required>
+                                    <p class="form-error">Please enter a valid email address</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="10-digit mobile number" required>
+                                    <p class="form-error">Please enter a valid 10-digit phone number</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Outfit Selection -->
+                        <div class="reveal" style="margin-top: var(--space-xl);">
+                            <h3 style="margin-bottom: var(--space-lg);">Outfit Selection</h3>
+                            <div class="form-group">
+                                <label for="outfitSelect">Select Outfit *</label>
+                                <select class="form-control" id="outfitSelect" required>
+                                    <option value="">Choose an outfit...</option>
+                                    <option value="emerald-gown">Emerald Silk Evening Gown — ₹1,200/day</option>
+                                    <option value="scarlet-midi">Scarlet Off-Shoulder Midi — ₹800/day</option>
+                                    <option value="noir-column">Noir Long-Sleeve Column Dress — ₹950/day</option>
+                                    <option value="blush-sari">Blush Pink Zardozi Sari — ₹1,300/day</option>
+                                    <option value="ivory-lehenga">Ivory Gold Threadwork Lehenga — ₹2,125/day</option>
+                                    <option value="navy-sequin">Navy Sequin Cocktail Dress — ₹700/day</option>
+                                    <option value="burgundy-velvet">Burgundy Velvet Drape Gown — ₹900/day</option>
+                                    <option value="rose-lehenga">Rose Gold Embroidered Lehenga — ₹1,600/day</option>
+                                </select>
+                                <p class="form-error">Please select an outfit</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sizeSelect">Size *</label>
+                                <select class="form-control" id="sizeSelect" required>
+                                    <option value="">Choose your size...</option>
+                                    <option value="XS">XS (Extra Small)</option>
+                                    <option value="S">S (Small)</option>
+                                    <option value="M">M (Medium)</option>
+                                    <option value="L">L (Large)</option>
+                                    <option value="XL">XL (Extra Large)</option>
+                                </select>
+                                <p class="form-error">Please select a size</p>
+                            </div>
+                        </div>
+
+                        <!-- Rental Duration -->
+                        <div class="reveal" style="margin-top: var(--space-xl);">
+                            <h3 style="margin-bottom: var(--space-md);">Rental Duration</h3>
+                            <p
+                                style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: var(--space-lg);">
+                                Choose how long you'd like to keep the outfit. Longer durations offer better value.</p>
+
+                            <div class="duration-options">
+                                <div class="duration-option" data-days="2">
+                                    <span class="days">2</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                                <div class="duration-option active" data-days="4">
+                                    <span class="days">4</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                                <div class="duration-option" data-days="7">
+                                    <span class="days">7</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                                <div class="duration-option" data-days="10">
+                                    <span class="days">10</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                                <div class="duration-option" data-days="14">
+                                    <span class="days">14</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                                <div class="duration-option" data-days="21">
+                                    <span class="days">21</span>
+                                    <span class="duration-label">Days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pickup / Return Dates -->
+                        <div class="reveal" style="margin-top: var(--space-xl);">
+                            <h3 style="margin-bottom: var(--space-lg);">Pickup & Return</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickupDate">Pickup Date *</label>
+                                    <input type="date" class="form-control" id="pickupDate" required>
+                                    <p class="form-error">Please select a pickup date</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="returnDate">Return Date</label>
+                                    <input type="date" class="form-control" id="returnDate" readonly
+                                        style="background: var(--color-cream); cursor: not-allowed;">
+                                    <p
+                                        style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: var(--space-xs);">
+                                        Auto-calculated based on duration</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="deliveryAddress">Delivery Address *</label>
+                                <textarea class="form-control" id="deliveryAddress"
+                                    placeholder="Full delivery address including pin code" required></textarea>
+                                <p class="form-error">Please enter your delivery address</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialNotes">Special Instructions</label>
+                                <textarea class="form-control" id="specialNotes"
+                                    placeholder="Alterations, timing preferences, or any special requests..."
+                                    style="min-height: 80px;"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg reveal"
+                            style="width: 100%; margin-top: var(--space-md);">Confirm Booking</button>
+                    </form>
+                </div>
+
+                <!-- Cost Summary Sidebar -->
+                <div>
+                    <div class="booking-summary reveal" style="position: sticky; top: calc(var(--nav-height) + 24px);">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-row">
+                            <span class="label">Rental Duration</span>
+                            <span class="value" id="summaryDuration">4 Days</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="label">Rental Cost</span>
+                            <span class="value" id="summarySubtotal">₹4,800</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="label">Dry Cleaning</span>
+                            <span class="value">₹500</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="label">Delivery & Pickup</span>
+                            <span class="value">Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="label">Security Deposit</span>
+                            <span class="value" id="summaryDeposit">₹2,000</span>
+                        </div>
+                        <div class="summary-row" style="font-size: 0.75rem; color: var(--color-text-muted);">
+                            <span class="label">Deposit refunded on return</span>
+                            <span class="value"></span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span class="label">Total</span>
+                            <span class="value" id="summaryTotal">₹7,300</span>
+                        </div>
+
+                        <div
+                            style="margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--color-border);">
+                            <p style="font-size: 0.8rem; color: var(--color-text-muted); line-height: 1.6;">
+                                &#10003; Free cancellation up to 48 hours before pickup<br>
+                                &#10003; Fully insured delivery<br>
+                                &#10003; 24/7 customer support
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Style<span>Rent</span></h3>
+                    <p>India's premier designer outfit rental platform. Making high fashion accessible for every
+                        occasion.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="lookbook.html">Lookbook</a>
+                    <a href="product.html">Collections</a>
+                    <a href="booking.html">Book Now</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <a href="lookbook.html">Evening Wear</a>
+                    <a href="lookbook.html">Bridal</a>
+                    <a href="lookbook.html">Cocktail</a>
+                    <a href="lookbook.html">Traditional</a>
+                    <a href="lookbook.html">Party Wear</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="contact.html">Styling Consultation</a>
+                    <a href="contact.html">Size Guide</a>
+                    <a href="contact.html">Rental Policy</a>
+                    <a href="contact.html">FAQs</a>
+                    <a href="contact.html">Returns</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StyleRent. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">&#9679;</a>
+                    <a href="#" aria-label="Facebook">&#9679;</a>
+                    <a href="#" aria-label="Pinterest">&#9679;</a>
+                    <a href="#" aria-label="Twitter">&#9679;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
